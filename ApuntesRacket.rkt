@@ -6,7 +6,7 @@
 --
 Comentario de varias lineas.
 --
-#|
+|#
 
 ;Hola mundo
 (display "Hola mundo! \n")
@@ -41,11 +41,11 @@ Comentario de varias lineas.
 (reverse my-list)
 ;Determina si la lista esta vacia o no
 (empty? my-list)
+
 ;Maximo elemento
 (max 5 4)
 ;Minimo Elemento
 (min 5 4)
-
 
 ;Definiendo funciones
 (define (F x) 
@@ -57,14 +57,14 @@ Comentario de varias lineas.
 (my-function 4)
 
 ;Map: Permite evaluar la funcion en cada valor de la lista (retorna una nueva)
-(define my-list '(1 2 3 4))
+(define l '(1 2 3 4))
 
-(map F my-list)
-(map my-function my-list)
-(map (lambda (x) (+ (* 2 x) 3)) my-list )
+(map F l)
+(map my-function l)
+(map (lambda (x) (+ (* 2 x) 3)) l )
 
 ;Filter: filtra o muestra una nueva lista con solo los elementos que cumplan cierta condicion
 
-(define l '(1 2 3 4 5 6))
+(define l1 '(1 2 3 4 5 6))
 
-(filter (lambda (x) (= 0 (remainder x 2))) l)
+(filter (lambda (x) (= 0 (remainder x 2))) l1)
