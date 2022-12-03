@@ -6,7 +6,7 @@
 --
 Comentario de varias lineas.
 --
-|#
+#|
 
 ;Hola mundo
 (display "Hola mundo! \n")
@@ -62,3 +62,9 @@ Comentario de varias lineas.
 (map F my-list)
 (map my-function my-list)
 (map (lambda (x) (+ (* 2 x) 3)) my-list )
+
+;Filter: filtra o muestra una nueva lista con solo los elementos que cumplan cierta condicion
+
+(define l '(1 2 3 4 5 6))
+
+(filter (lambda (x) (= 0 (remainder x 2))) l)
